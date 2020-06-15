@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <style>
+    body{
+    width: 500px;
+    height: 500px;
+    background-image: url({% static 'polls/images/herobg.jpg' %});
+    }</style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<h1 style="font-family: verdana" style=font-size:60px">Welcome to the django framework</h1>
+<body class ="body">
+<!--style="background-image: url({% static 'polls/images/herobg.jpg' %})"-->
+<p style="font-family: verdana"  style="font-size:30px">Feel free to browse</p>
+<a style="font-family: verdana"  style="font-size:30px" href="{% url 'polls' %}">Vote</a>
+</body>
+</html>
